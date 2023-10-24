@@ -14,7 +14,7 @@ pipeline {
                 sh "mvn package"
             }
         }
-        stage('build') {
+        stage('quality') {
             steps {
                 sh "mvn sonar:sonar"
             }
