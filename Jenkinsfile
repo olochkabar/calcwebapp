@@ -16,6 +16,7 @@ pipeline {
         }
         stage('quality') {
             steps {
+                sh "mvn clean install"
                 sh "mvn sonar:sonar -Dsonar.login=c0d37e6fb1c673e2a4f6caf2d85c2ae4cd4004ee"
             }
         }
