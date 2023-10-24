@@ -1,6 +1,8 @@
 pipeline {
     agent any
-
+    tools {
+        maven "maven3.9.4"
+    }
     stages {
         stage('pull') {
             steps {
@@ -9,7 +11,7 @@ pipeline {
         }
         stage('build') {
             steps {
-              sh "mvn package"
+                sh "mvn package"
             }
         }
     }
