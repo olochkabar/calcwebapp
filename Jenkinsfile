@@ -4,7 +4,7 @@ pipeline {
         maven "maven"
     }
     stages {
-        stage('gitpull') {
+        stage('gitclone') {
             steps {
                git credentialsId: 'GitHub', url: 'https://github.com/olochkabar/calcwebapp'
             }
