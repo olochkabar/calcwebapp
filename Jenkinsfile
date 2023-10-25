@@ -15,8 +15,29 @@ pipeline {
             }
         }
         stage('quality') {
+              steps {
+                  script {
+
+                }
+            }
+        }
+        stage('artifactory') {
             steps {
-                sh "mvn sonar:sonar -Dsonar.projectKey=calc -Dsonar.host.url=http://35.183.9.222:9000 -Dsonar.login=971937ee857342c83e5fddf00f185190123a6e09"
+            
+            }
+        }
+        stage('docker build') {
+            steps {
+                script {
+
+                }
+            }
+        }
+        stage('docker push') {
+            steps {
+                script {
+
+                }
             }
         }
     }
