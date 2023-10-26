@@ -32,6 +32,21 @@
 		</dependency>
 
 	</dependencies>
+	<distributionManagement>
+      <repository>
+        <id>nexus</id>
+        <name>calcwebapp</name>
+        <url>http://3.96.167.175:8081/repository/calcwebapp/</url>
+      </repository>
+      
+      <snapshotRepository>
+        <id>nexus</id>
+        <name>calcwebapp</name>
+        <url>http://3.96.167.175:8081/repository/calcwebapp/</url>
+      </snapshotRepository>
+      
+  </distributionManagement>
+
 	<build>
 		<plugins>
 			<plugin>
