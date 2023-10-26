@@ -33,10 +33,10 @@
 
 	</dependencies>
 	<distributionManagement>
-      <repository>
+      <releaserepository>
         <id>nexus</id>
-        <name>calcwebap</name>
-        <url>http://3.96.167.175:8081/repository/calcwebap/</url>
+        <name>calcwebapp</name>
+        <url>http://3.96.167.175:8081/repository/calcwebapp/</url>
       </repository>
       
       <snapshotRepository>
