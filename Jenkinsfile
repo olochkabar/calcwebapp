@@ -14,7 +14,7 @@ pipeline {
                 sh "mvn package"
             }
         }
-        stage('quality') {
+        /*stage('quality') {
               steps {
                   script {
                     withSonarQubeEnv() {
@@ -22,13 +22,13 @@ pipeline {
                 }
             }
         }
-        }
-        /*stage('artifactory') {
-            steps {
-            
-            }
         }*/
-        stage('docker build') {
+        stage('artifactory') {
+            steps {
+               sh "mvn deploy"
+            }
+        }
+        /*stage('docker build') {
             steps {
                 script {
                 withDockerRegistry(credentialsId: 'docker') {
@@ -45,6 +45,6 @@ pipeline {
                     }
                 }
             }
-        }
+        }*/
     }
 }
