@@ -4,7 +4,7 @@ pipeline {
         maven "maven"
     }
     stages {
-        stage('gitclone') {
+        stage('git clone') {
             steps {
                git credentialsId: 'GitHub', url: 'https://github.com/olochkabar/calcwebapp'
             }
@@ -21,6 +21,7 @@ pipeline {
                     sh "mvn clean verify sonar:sonar -Dsonar.projectKey=calcwebapp -Dsonar.projectName='calcwebapp'"
                 }
             }
+        }
         }
         /*stage('artifactory') {
             steps {
