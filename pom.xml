@@ -35,14 +35,14 @@
 	<distributionManagement>
       <repository>
         <id>nexus</id>
-        <name>calcwebapp</name>
-        <url>http://3.96.167.175:8081/repository/calcwebapp/</url>
+        <name>calcwebap</name>
+        <url>http://3.96.167.175:8081/repository/calcwebap/</url>
       </repository>
       
       <snapshotRepository>
         <id>nexus</id>
-        <name>calcwebapp</name>
-        <url>http://3.96.167.175:8081/repository/calcwebapp/</url>
+        <name>calcwebap</name>
+        <url>http://3.96.167.175:8081/repository/calcwebap/</url>
       </snapshotRepository>
       
   </distributionManagement>
@@ -103,7 +103,7 @@
     <serverId>nexus</serverId>
     
     <!-- Which repository to deploy to -->
-    <repository>http://3.96.167.175:8081/repository/calcwebapp/</repository>
+    <repository>http://3.96.167.175:8081/repository/calcwebap/</repository>
      
     <!-- Skip the staging deploy mojo -->
     <skipNexusStagingDeployMojo>true</skipNexusStagingDeployMojo>
